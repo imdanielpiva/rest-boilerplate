@@ -1,0 +1,32 @@
+{
+  "name": "@atechome/server",
+  "version": "0.0.0",
+  "description": "Atechome Server",
+  "main": "index.js",
+  "author": "daniel piva",
+  "license": "ISC",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js",
+    "watch": "nodemon index.js",
+    "debug": "DEBUG='*' yarn watch",
+    "win-debug": "@powershell -Command $env:DEBUG='*'; yarn dev"
+  },
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-jwt": "^5.3.1",
+    "global": "^4.3.2",
+    "jsonwebtoken": "^8.3.0",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.1.6",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "debug": "^3.1.0",
+    "eslint": "^4.19.1",
+    "nodemon": "^1.17.5"
+  }
+}

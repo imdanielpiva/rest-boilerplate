@@ -1,0 +1,31 @@
+{
+  "GET /bookings": {
+    "desc": "Returns an array containing all bookings",
+    "response": "200 application/json",
+    "data": [{}]
+  },
+
+  "GET /bookings/:id": {
+    "desc": "Returns an object representing one booking by its id",
+    "response": "200 application/json",
+    "data": {}
+  },
+
+  "POST /bookings": {
+    "desc": "Create a new booking using the posted object as the booking",
+    "response": "201 application/json",
+    "data": {}
+  },
+
+  "PUT /bookings/:id": {
+    "desc": "Updates the matching booking with the posted update object.",
+    "response": "200 application/json",
+    "data": {}
+  },
+
+  "DELETE /bookings/:id": {
+    "desc": "Deletes the matching booking",
+    "response": "200 application/json",
+    "data": {}
+  }
+}
